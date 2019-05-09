@@ -1,0 +1,7 @@
+airports = ParseCSV("airports_small.csv")
+
+airports.headerCols()
+
+airports.describeCols()
+
+S1 = airports.getSample()
