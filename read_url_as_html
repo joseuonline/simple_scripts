@@ -1,0 +1,6 @@
+import urllib
+content=urllib.request.urlopen("http://www.example.com/") 
+for line in content: 
+    line = line.rstrip()
+    line = line.decode("utf8")
+    print (line)
