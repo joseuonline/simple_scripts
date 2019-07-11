@@ -14,7 +14,7 @@ import os.path
 
 #fileVariable = open(filename)
 print("\n")
-print(">" * 25, " CS 521 FINAL PROJECT ", "<" * 25)
+print(">" * 25, " CS PROJECT ", "<" * 25)
 print("Initializing class ParseCSV...")
 
 
