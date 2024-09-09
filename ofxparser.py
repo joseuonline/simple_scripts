@@ -15,6 +15,7 @@ def parse_ofx_qfx(file_path):
     for account in ofx.accounts:
         for transaction in account.statement.transactions:
             transactions.append({
+                'id': transaction.id,
                 'date': transaction.date,
                 'amount': transaction.amount,
                 'payee': transaction.payee,
@@ -43,7 +44,7 @@ def select_file():
     root.withdraw()  # Hide the main Tkinter window
     file_path = filedialog.askopenfilename(
         title="Select OFX or QFX file",
-        filetypes=[("OFX files", "*.ofx"), ("QFX files", "*.qfx")]
+        filetypes=[("OFX files", "*.ofx",), ("QFX files", "*.qfx")]
     )
     return file_path
 
